@@ -10,6 +10,12 @@ import static org.junit.Assert.*;
 public class CheckoutSteps {
 	int bananaPrice = 0;
 	Checkout checkout;
+
+    // @When("^I checkout <count> \"([^\"]*)\"$")
+    // public void iCheckout(int itemCount) {
+    //     checkout = new Checkout();
+    //     checkout.add(itemCount, bananaPrice);
+    // }
 	
  @Given("^the price of a \"(.*?)\" is (\\d+)c$")
     public void thePriceOfAIsC(String name, int price) throws Throwable {
